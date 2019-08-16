@@ -5,7 +5,7 @@ from Bio.Blast import NCBIXML
 from Bio.Blast.NCBIWWW import _parse_qblast_ref_page
 
 #help(NCBIWWW.qblast)
-base_dir = 'C:\\Users\\Арсений\\PycharmProjects\\Bio_Project'
+
 
 
 ## First protein blasting
