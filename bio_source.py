@@ -10,7 +10,7 @@ base_dir = 'C:\\Users\\Арсений\\PycharmProjects\\Bio_Project'
 
 ## First protein blasting
 my_query = SeqIO.read("test.fasta", format="fasta") # Read fasta file
-result_handle = NCBIWWW.qblast("blastp", "nr", my_query.seq, hitlist_size = 55) # blast it in ncbi,
+result_handle = NCBIWWW.qblast("blastp", "nr", my_query.seq, hitlist_size = 10000) # blast it in ncbi,
                                                                                          # hitsize need to put more,
                                                                                          # blastp -- program for proteins
                                                                                          # nr -- database for proteins
