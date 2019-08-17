@@ -1,6 +1,7 @@
 # Bio_Project
 Blasting protein-protein sequences
 Using for double blast
+The current files stored in this repository were obtained during the test run of the script
 ------------------------------------
 #1) First protein blasting:
     first_blast("first_protein.fasta")
