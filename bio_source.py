@@ -33,7 +33,7 @@ def result_parse(db_exp):
     result_file = open("result_file.fasta", "w")
     for seq_record in SeqIO.parse(db_exp, "fasta"):
         result_file.write(">" + seq_record.description + '\n' + str(seq_record.seq) + '\n')
-
+    result_file.close()
 
 #1) First protein blasting:
     first_blast("first_protein.fasta")
@@ -49,4 +49,4 @@ def result_parse(db_exp):
 #5) Save received blast results from genome workbench as fasta sequnces file
 
 #6) Parse final fasta file
-    result_parse("exported_from_genome_workbench.fasta")
+    result_parse("first_try_export.fasta")

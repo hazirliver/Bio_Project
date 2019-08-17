@@ -3,6 +3,21 @@ Blasting protein-protein sequences
 Using for double blast
 The current files stored in this repository were obtained during the test run of the script
 ------------------------------------
+>bio_source.py            -- source script file
+
+>test.fasta               -- first blasting protein sequence
+>test2.fasta              -- second blasting protein sequence
+
+>my_blast.xml             -- BLAST results after first blasting
+>first_try_export.fasta   -- Genome Workbench BLAST results after second blasting
+
+>db_file.fasta            -- MultiFasta database file
+>db_file.fasta.psq        -- DataBase file for Genome Workbench
+
+>result_file.fasta        -- Finish fasta file with second blasted proteins with their description and sequences
+
+
+------------------------------------
 #1) First protein blasting:
     first_blast("first_protein.fasta")
 
@@ -17,4 +32,4 @@ The current files stored in this repository were obtained during the test run of
 #5) Save received blast results from genome workbench as fasta sequnces file
 
 #6) Parse final fasta file
-    result_parse("exported_from_genome_workbench.fasta")
+    result_parse("first_try_export.fasta")
