@@ -36,10 +36,10 @@ def result_parse(db_exp):
     result_file.close()
 
 #1) First protein blasting:
-    first_blast("first_protein.fasta")
+#first_blast("test.fasta")
 
 #2) Parse received xml and create fasta file for further making database:
-    xml_parse("my_blast.xml")
+xml_parse("my_blast.xml")
 
 #3) Linux terminal command:
     #$ makeblastdb -in db_file.fasta -title "my_database" -dbtype prot
@@ -49,4 +49,4 @@ def result_parse(db_exp):
 #5) Save received blast results from genome workbench as fasta sequnces file
 
 #6) Parse final fasta file
-    result_parse("first_try_export.fasta")
+#result_parse("first_try_export.fasta")
